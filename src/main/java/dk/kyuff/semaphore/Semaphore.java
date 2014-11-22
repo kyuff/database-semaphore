@@ -5,7 +5,7 @@ package dk.kyuff.semaphore;
  * Date: 22/11/14
  * Time: 07.11
  */
-public enum Lock {
+public enum Semaphore {
     BUSINESS,
-    BLACKOPS
+    semaphore, BLACKOPS
 }

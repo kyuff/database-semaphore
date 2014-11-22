@@ -1,1 +1,1 @@
-docker run --rm -it --link "semaphore-db:semaphore-db" --name semaphore-cli semaphore/cli
+docker run --rm -it --link "db:db" --name semaphore-cli semaphore/cli
