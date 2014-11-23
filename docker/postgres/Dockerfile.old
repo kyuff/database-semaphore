@@ -1,0 +1,11 @@
+FROM postgres:9.3
+MAINTAINER Søren Kyndi-Wiuff
+
+RUN echo "host all  all    0.0.0.0/0  md5" >> $PGDATA/pg_hba.conf
+RUN echo "listen_addresses='*'" >> $PGDATA/postgresql.conf
+
+RUN echo 2
+ADD setup-schema.sh /docker-entrypoint-initdb.d/
+
+
+

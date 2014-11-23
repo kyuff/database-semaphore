@@ -3,7 +3,6 @@ package dk.kyuff.semaphore;
 import javax.persistence.EntityManager;
 import javax.persistence.LockModeType;
 import javax.persistence.PersistenceException;
-import javax.persistence.PessimisticLockException;
 import java.util.Random;
 import java.util.function.Function;
 
