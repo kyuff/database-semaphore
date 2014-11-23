@@ -25,7 +25,7 @@ public class Mutex {
         try {
             entityManager.find(SemaphoreEntity.class, semaphore, LockModeType.PESSIMISTIC_WRITE);
             String output = success.apply(true);
-            System.out.println(output);
+
         } catch (PersistenceException e) {
             String output = failure.apply(false);
             System.out.println(output + " could not get a lock");

@@ -7,5 +7,5 @@ package dk.kyuff.semaphore;
  */
 public enum Semaphore {
     BUSINESS,
-    semaphore, BLACKOPS
+    BLACKOPS
 }
